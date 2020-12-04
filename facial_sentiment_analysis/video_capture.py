@@ -1,3 +1,4 @@
+# to see the comments, please refer to video_capture.ipynb file
 import cv2
 import numpy as np
 from cvlib import detect_face

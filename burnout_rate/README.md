@@ -2,7 +2,7 @@
 > Oct 21, 2020, 04:00 AM EEST - Nov 20, 2020, 04:00 AM EET
 <p align="center">
   <img width="910" height="410" src="https://media-fastly.hackerearth.com/media/hackathon/hackerearth-machine-learning-challenge-predict-burnout-rate/images/8beab99412-Burnout_Cover_Image.png"><br>
-  <i>Source: HackerEarth</i>
+  <i>Source: <a href="https://www.hackerearth.com/challenges/competitive/hackerearth-machine-learning-challenge-predict-burnout-rate/">HackerEarth</a></i>
 </p>
 
 ### "I could have done better."

@@ -10,7 +10,6 @@ My intention here is not to present you one of those shiny tutorials but an orga
 * **Part 3:** Unveil some of the toolkit to fine-tune our models and prepare the platform to use our pretrained model file and implement it to our webcam.<br>
 ## [Let's dive in to this Medium article!](https://gulmert89.medium.com/facial-sentiment-analysis-by-using-scrapy-and-keras-9d8c20246895)
 
----
 Before you go, let me clarify some of the files above:<br>
 * [first_model.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/first_model.ipynb): The model trials with 180 images. This is also the introduction of the project.
 * [second_model.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/second_model.ipynb): The trials with 180 real + 1000 generated images. An image generation step was added.

@@ -1,4 +1,0 @@
-[server]
-port = $PORT
-enableCORS = false
-headless = true

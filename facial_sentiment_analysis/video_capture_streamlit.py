@@ -3,8 +3,7 @@
 from streamlit import image as st_image, title as st_title, \
     button as st_button, text as st_text
 from cv2 import VideoCapture, resize, cvtColor, rectangle, putText, \
-                imshow, waitKey, destroyWindow, destroyAllWindows, \
-                FONT_HERSHEY_COMPLEX, LINE_AA
+    imshow, destroyAllWindows, FONT_HERSHEY_COMPLEX, LINE_AA
 from numpy import copy, expand_dims, argmax
 from cvlib import detect_face
 from keras.models import load_model
@@ -28,7 +27,7 @@ if __name__ == "__main__":
     count = 0
     if st_button("Click here to open the camera."):
         st_text("(No worries. The camera will be automatically closed.)")
-        while count < 75:
+        while count < 100:
             ret, frame = cap.read()
             if not ret:
                 print("Can't receive the frame.")
@@ -80,8 +79,8 @@ if __name__ == "__main__":
                         fontScale=0.6, 
                         color=text_color, 
                         thickness=1)
-            frame = cvtColor(frame, code=2)
-            WINDOW.image(frame)
+            #frame = cvtColor(frame, code=2)    # works slower than frame[..., ::-1]
+            WINDOW.image(frame[..., ::-1])
             #imshow("Face_Sentiment", frame)
             count += 1
         cap.release()

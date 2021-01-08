@@ -31,7 +31,6 @@ if __name__ == "__main__":
                     exif_orientation = orientation
                     break        
             exif = image_file._getexif()
-
             if exif[exif_orientation] == 3:
                 image_file = image_file.rotate(180, expand=True)
             elif exif[exif_orientation] == 6:

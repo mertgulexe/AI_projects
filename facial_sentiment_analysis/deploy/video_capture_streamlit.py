@@ -1,8 +1,8 @@
 from tensorflow.keras.models import load_model
 from streamlit import image as st_image, title as st_title, cache as st_cache,\
     button as st_button, text as st_text, file_uploader as st_file_uploader
-from cv2 import VideoCapture, resize, cvtColor, rectangle, putText, waitKey\
-    destroyAllWindows, FONT_HERSHEY_COMPLEX, LINE_AA
+from cv2 import VideoCapture, resize, cvtColor, rectangle, putText, imwrite,\
+    imshow, imread, destroyAllWindows, FONT_HERSHEY_COMPLEX, LINE_AA, waitKey
 from numpy import copy, expand_dims, argmax, array
 from cvlib import detect_face
 from PIL import Image, ExifTags
@@ -18,10 +18,16 @@ def getClassName(classIndex):
     elif classIndex==2: return "Shocked"
     else:               return "Poker Face"
 
+#@st_cache
+#def img_load(img):
+#    imag = Image_open(img)
+#    return imag
+
 if __name__ == "__main__":    
     detectFace_threshold = 0.70
     predictFace_threshold = 0.35 * 100
-    image_file = st_file_uploader("Upload your selfie here:", type=["jpg", "jpeg", "png"])    
+    image_file = st_file_uploader("Upload your selfie here:", type=["jpg", "jpeg", "png"])
+    st_text("Hint: Try not to hold the camera too close to your face.")
     if image_file is not None:
         image_file = Image.open(image_file)
         try:
@@ -30,6 +36,7 @@ if __name__ == "__main__":
                     exif_orientation = orientation
                     break        
             exif = image_file._getexif()
+
             if exif[exif_orientation] == 3:
                 image_file = image_file.rotate(180, expand=True)
             elif exif[exif_orientation] == 6:
@@ -74,9 +81,10 @@ if __name__ == "__main__":
                     rect_color = text_color = (0, 255, 0)
                 elif className == "Poker Face":
                     rect_color = text_color = (218, 112, 214)
+
             else:
                 rect_color = text_color = (0, 255, 255)
-                frame_text = "Reading..."
+                frame_text = "Reading..."    
 
             rectangle(img=frame, 
                         pt1=(startX, startY), 
@@ -94,4 +102,5 @@ if __name__ == "__main__":
                         fontScale=0.6, 
                         color=text_color, 
                         thickness=1)
+
         st_image(frame)

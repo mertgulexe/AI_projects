@@ -1,4 +1,4 @@
-# A Facial Sentiment Analysis Journey: From Scraping Your First Image to a Stable Model
+# A Facial Sentiment Analysis Journey: From Scraping Your First Image to a Deployed Model
 <p align="center">
   <img width="640" height="360" src="https://miro.medium.com/max/640/1*tLpUlxNvKeXh8XUEvaCGPQ.gif"><br>
   <i>Now everybody around me knows what a sentiment analysis is 😄️</i>

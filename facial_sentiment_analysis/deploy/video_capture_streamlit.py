@@ -76,14 +76,14 @@ if __name__ == "__main__":
                 if className == "Shocked":
                     rect_color = text_color = (255, 255, 0)
                 elif className == "Sad":
-                    rect_color = text_color = (255, 0, 0)
+                    rect_color = text_color = (0, 255, 255)
                 elif className == "Happy":
                     rect_color = text_color = (0, 255, 0)
                 elif className == "Poker Face":
                     rect_color = text_color = (218, 112, 214)
 
             else:
-                rect_color = text_color = (0, 255, 255)
+                rect_color = text_color = (255, 0, 0)
                 frame_text = "Reading..."    
 
             rectangle(img=frame, 

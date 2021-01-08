@@ -20,7 +20,7 @@ def getClassName(classIndex):
 cap = VideoCapture(0)
 
 detectFace_threshold = 0.80
-predictFace_threshold = 0.39 * 100
+predictFace_threshold = 0.70 * 100
 
 try:
     while cap.isOpened():
@@ -52,13 +52,13 @@ try:
                 if className == "Shocked":
                     rect_color = text_color = (0, 255, 255)
                 elif className == "Sad":
-                    rect_color = text_color = (255, 0, 0)
+                    rect_color = text_color = (0, 0, 255)
                 elif className == "Happy":
                     rect_color = text_color = (0, 255, 0)
                 elif className == "Poker Face":
                     rect_color = text_color = (214, 112, 218)
             else:
-                rect_color = text_color = (0, 0, 255)
+                rect_color = text_color = (255, 255, 0)
                 frame_text = "Reading..."    
 
             rectangle(img=frame, 

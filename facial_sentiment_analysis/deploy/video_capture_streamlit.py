@@ -37,7 +37,7 @@ if __name__ == "__main__":
                 image_file = image_file.rotate(270, expand=True)
             elif exif[exif_orientation] == 8:
                 image_file = image_file.rotate(90, expand=True)
-        except (AttributeError, KeyError, IndexError):
+        except:
             pass
         frame = array(image_file)        
         height = 370

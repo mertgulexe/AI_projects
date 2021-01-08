@@ -18,11 +18,6 @@ def getClassName(classIndex):
     elif classIndex==2: return "Shocked"
     else:               return "Poker Face"
 
-#@st_cache
-#def img_load(img):
-#    imag = Image_open(img)
-#    return imag
-
 if __name__ == "__main__":    
     detectFace_threshold = 0.70
     predictFace_threshold = 0.35 * 100
@@ -44,7 +39,6 @@ if __name__ == "__main__":
             elif exif[exif_orientation] == 8:
                 image_file = image_file.rotate(90, expand=True)
         except (AttributeError, KeyError, IndexError):
-            # cases: image don't have getexif
             pass
         frame = array(image_file)        
         height = 370

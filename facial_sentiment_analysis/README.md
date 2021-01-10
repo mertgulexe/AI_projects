@@ -15,4 +15,4 @@ My intention here is not to present you one of those shiny tutorials but an orga
 * [second_model.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/second_model.ipynb): The trials with 180 real + 1000 generated images. An image generation step was added.
 * [third_model.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/third_model.ipynb): The trials with lots of images! Also we fine-tuned the model here with various Keras callbacks.
 * [scraped_jsons_to_imgs.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/scraped_jsons_to_imgs.ipynb): We collected thousands of image links with Scrapy. They had to be converted to images.
-* [video_capture.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/video_capture.ipynb): Preparation of the pretrained model file. It's implemented to our webcam.
+* [video_capture.ipynb](https://github.com/gulmert89/projects/blob/main/facial_sentiment_analysis/video_capture.ipynb): Preparation of the pretrained model file. It's implemented to our local webcam.

@@ -40,7 +40,7 @@ if __name__ == "__main__":
         except:
             pass
         frame = array(image_file)        
-        height = 370
+        height = 480
         width = int((frame.shape[0] / frame.shape[1]) * height)
         frame = resize(frame, (height, width))
         faces, confidences = detect_face(frame, threshold=detectFace_threshold)

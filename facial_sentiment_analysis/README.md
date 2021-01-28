@@ -9,7 +9,7 @@ My intention here is not to present you one of those shiny tutorials but an orga
 * **Part 2:** We are going to loot… \*cough\* I mean, collect thousands of images with Scrapy and discuss why Pikachu seems impeccably happy all the time!<br>
 * **Part 3:** Unveil some of the toolkit to fine-tune our models and prepare the platform to use our pretrained model file and implement it to our webcam.<br>
 * **Bonus:** It’s your turn: Play with the model on a deployed web application!<br>
-## Link 1: [Let's dive in to the Medium article!](https://gulmert89.medium.com/facial-sentiment-analysis-by-using-scrapy-and-keras-9d8c20246895)
+### Link 1: [Let's dive in to the Medium article!](https://gulmert89.medium.com/facial-sentiment-analysis-by-using-scrapy-and-keras-9d8c20246895)
 ## Link 2: [Also, you can try the web application!](https://facialsentimentanalysis.herokuapp.com/)
 
 ...but before you go, let me clarify some of the files above:<br>

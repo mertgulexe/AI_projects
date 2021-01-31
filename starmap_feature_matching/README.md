@@ -8,6 +8,9 @@ For over a few weeks, I have been planning to study object detection deeply but 
 </p>
 
 I think you got the idea here :) It's quite easy to locate the position of a plain template taken from an image but the problem arises when the template is zoomed, flipped and/or rotated etc. Certainly, there are multiple options to come up with a solution and in this project, we are going to discover them!<br>
-For the initial study, please see the [notebook](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/starmap_notebook.ipynb) file.<br>
 
-_Oh, and yes: This is the spark of the beginning of my object detection journey :)_
+**Files:**<br>
+* For the initial study, please see the [notebook](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/starmap_notebook.ipynb) file.<br>
+* [Python script](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/starmap_script.py) that shows the location of the template on the big picture. You can try it out if the template is not rotated or flipped. (When I fix the code to get the rotated images as well, you won't be reading this:)<br>
+
+_Oh, and yes: This is the spark of my object detection journey :) Have a nice day!_

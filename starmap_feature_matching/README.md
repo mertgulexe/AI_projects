@@ -12,6 +12,6 @@ I think you got the idea here :) It's quite easy to locate the position of a pla
 **Files:**<br>
 * For the initial study, please see the [notebook](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/starmap_notebook.ipynb) file.<br>
 * [Python script](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/starmap_script.py) that shows the location of the template on the big picture. You can try it out if the template is not rotated or flipped. (When I fix the code to get the rotated images as well, you won't be reading this:)<br>
-* The modules that you will [require](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/requirements.txt) to use the script.
+* The modules that you will [require](https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/requirements.txt) to use the notebook. The script only needs  **numpy** & **opencv-python** at the moment.<br>
 
 _Oh, and yes: This is the spark of my object detection journey :) Have a nice day!_

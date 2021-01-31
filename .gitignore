@@ -1,8 +1,4 @@
 
-starmap_feature_matching/StarMap_marked.png
-starmap_feature_matching/StarMap.png
-starmap_feature_matching/Small_area_rotated.png
-starmap_feature_matching/Small_area.png
-starmap_feature_matching/0.jpg
-starmap_feature_matching/1.jpg
-starmap_feature_matching/StarMap_marked.png
+starmap_feature_matching/*.png
+starmap_feature_matching/*.jpg
+

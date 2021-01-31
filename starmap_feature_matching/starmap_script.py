@@ -46,7 +46,7 @@ def main():
         org_TL = (startX-130, startY-5)
         org_TR = (startX+WIDTH+10, startY-5)
         org_BL = (startX-130, startY+HEIGHT+10)
-        org_BR = (startX+WIDTH+10, startY+WIDTH+10)
+        org_BR = (startX+WIDTH+10, startY+HEIGHT+10)
 
         for TEXT, ORIGIN in zip((text_TL, text_TR, text_BL, text_BR), 
                                 (org_TL, org_TR, org_BL, org_BR)):

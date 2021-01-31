@@ -5,7 +5,7 @@ For over a few weeks, I have been planning to study object detection deeply but 
   <img width="114" height="114" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/Small_area.png"><br>
   <i>Here it is!</i><br>
   <img width="800" height="528" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/StarMap_marked.png"><br>
-  <i>How about this naughty guy?</i>
+  <i>How about this naughty guy?</i><br>
   <img width="154" height="154" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/Small_area_rotated.png"><br>
 </p>
 

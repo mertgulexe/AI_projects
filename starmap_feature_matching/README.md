@@ -5,6 +5,8 @@ For over a few weeks, I have been planning to study object detection deeply but 
   <img width="114" height="114" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/Small_area.png"><br>
   <i>Here it is!</i><br>
   <img width="800" height="528" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/StarMap_marked.png"><br>
+  <i>How about this naughty guy? =)</i><br>
+  <img width="154" height="154" src="https://github.com/gulmert89/projects/blob/main/starmap_feature_matching/Small_area_rotated.png"><br>
 </p>
 
 I think you got the idea here :) It's quite easy to locate the position of a plain template taken from an image but the problem arises when the template is zoomed, flipped and/or rotated etc. Certainly, there are multiple options to come up with a solution and in this project, we are going to discover them!<br>

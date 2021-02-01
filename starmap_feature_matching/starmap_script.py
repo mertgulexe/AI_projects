@@ -27,7 +27,7 @@ def main():
     (startX, startY) = min_loc    # top left corner
     (endX, endY) = (startX + WIDTH, startY + HEIGHT)    # bottom right corner
 
-    def mark_the_bigPicture(modified_image_name="StarMap_marked.png"):
+    def mark_the_bigPicture(modified_image_name="StarMapMarked.png"):
         """This function creates a rectangle over the template found in the 
         bigger picture and shows the coordinates of the corner points.
         The only variable it takes is the modified image name as a string."""

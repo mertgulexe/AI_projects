@@ -43,6 +43,9 @@ if __name__ == "__main__":
         height = 480
         width = int((frame.shape[0] / frame.shape[1]) * height)
         frame = resize(frame, (height, width))
+        if frame.shape[2] == 4:    # alpha channel will be removed
+            frame = cvtColor(frame, code=1)    # BGRA2BGR
+        else: pass 
         faces, confidences = detect_face(frame, threshold=detectFace_threshold)
         for f in faces:
             # corner points of facial frame: 
@@ -55,7 +58,7 @@ if __name__ == "__main__":
                 continue
             # preprocessing on the cropped frame
             cropped_frame = resize(cropped_frame, (64,64))        
-            cropped_frame = cvtColor(cropped_frame, code=6)    # convert to grayscale
+            cropped_frame = cvtColor(cropped_frame, code=6)    # BGR2GRAY
             cropped_frame = cropped_frame.astype("float32") / 255.0
             cropped_frame = expand_dims(cropped_frame, axis=[0,3])
             confidences = model.predict(cropped_frame)[0]    # probability value

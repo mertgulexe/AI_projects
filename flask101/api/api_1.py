@@ -43,7 +43,7 @@ def api_id():
         id = int(request.args["id"])
         # example: ?id=0
         # Data passed through URLs like this (after the ?)
-        # are called query parameters.
+        # are called 'query parameters'.
     else:
         return "Error: No id field provided. Please specify an id."
 
@@ -62,9 +62,3 @@ def api_id():
 
 
 app.run()
-
-
-# Mert's Notes:
-# 1) After incorporating these design improvements,
-# a request to our API might look like this:
-# https://api.example.com/v1/resources/books?id=10
